@@ -1,0 +1,1357 @@
+{
+	"info": {
+		"_postman_id": "14857f36-f6b5-4585-a544-e13ac9e3bbe2",
+		"name": "Testifly- Node",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21730236"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"tamil\",\r\n    \"password\":\"tamil\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.8:3002/users/logintoken",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"8"
+					],
+					"port": "3002",
+					"path": [
+						"users",
+						"logintoken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mailsend",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.104:6005/users/mailsent",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"104"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"mailsent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addresult",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userid\":3,\r\n    \"totalquestions\":5,\r\n    \"totalcorrectans\":4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3006/result/addresult",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3006",
+					"path": [
+						"result",
+						"addresult"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "checklogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"tamil\",\r\n    \"password\":\"tamil\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.5:3002/users/checklogin",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5"
+					],
+					"port": "3002",
+					"path": [
+						"users",
+						"checklogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRhbWlsIiwicGFzc3dvcmQiOiJ0YW1pbCIsImlhdCI6MTY4NTk0NTc2MiwiZXhwIjoxNjg1OTQ2MDYyfQ.b4c-Xi9y3GvE0h4fyZRZb0mpYtSiJHEu5rl98sDEgzM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRhbWlsIiwicGFzc3dvcmQiOiJ0YW1pbCIsImlhdCI6MTY4NTcxNjk5NH0.f6rszt0mne8YGfLhakfe9_hiiD1UQoHB5h5JM5lo9ZU",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://192.168.0.5:3002/users/posts",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5"
+					],
+					"port": "3002",
+					"path": [
+						"users",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adds",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRhbWlsIiwicGFzc3dvcmQiOiJ0YW1pbCIsImlhdCI6MTY4NTcxNjk5NH0.f6rszt0mne8YGfLhakfe9_hiiD1UQoHB5h5JM5lo9ZU",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://192.168.0.6:6005/users/adds",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"6"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"adds"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "authlogintokenpost",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRhbWlsIiwicGFzc3dvcmQiOiJ0YW1pbCIsImlhdCI6MTY4NTcxNjk5NH0.f6rszt0mne8YGfLhakfe9_hiiD1UQoHB5h5JM5lo9ZU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://192.168.0.103:3002/users/logintoken",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"103"
+					],
+					"port": "3002",
+					"path": [
+						"users",
+						"logintoken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getuser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.5:3002/users/getuser",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5"
+					],
+					"port": "3002",
+					"path": [
+						"users",
+						"getuser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getuserimage",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.4:6005/users/getuserimage/110",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"4"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"getuserimage",
+						"110"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "doctodetail",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.5:6005/users/doctordetail/11",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"doctordetail",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getimageurl",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.6:6005/users/getimageurl",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"6"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"getimageurl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getuserimagefromlocal",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.6:6005/users/getimageurl",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"6"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"getimageurl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getuserimageIdbase",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.5:6005/users/getuserimage/1",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"getuserimage",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getcategory",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://192.168.0.5:6005/users/getcategoryy",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"getcategoryy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getdoctorlist",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://192.168.0.5:6005/users/getdoctorlist/g",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"getdoctorlist",
+						"g"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getcategoriesname",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.5:6005/users/getcategories/d",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"getcategories",
+						"d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getDoctorByCategory",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.6:3002/users/getDoctorByCategory/?categoryId=2",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"6"
+					],
+					"port": "3002",
+					"path": [
+						"users",
+						"getDoctorByCategory",
+						""
+					],
+					"query": [
+						{
+							"key": "categoryId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "doctorcategorymap",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.175.7:3002/users/doctorcategorymap",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"175",
+						"7"
+					],
+					"port": "3002",
+					"path": [
+						"users",
+						"doctorcategorymap"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getcategoriesname Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.5:6005/users/getcategories/d",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"getcategories",
+						"d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adduser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   \r\n     { \"username\": \"look\",\r\n        \"password\":\"look\",\r\n        \"gender\": \"male\",\r\n        \"email\": \"look@gmail.com\",\r\n        \"phonenumber\":\"3222222\",\r\n        \"url\":\"https://www.google.com/search?q=patient+image&tbm=isch&ved=2ahUKEwi6jerpiu2AAxXjoOkKHdBADdoQ2-cCegQIABAA&oq=patient+image&gs_lcp=CgNpbWcQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BAgjECc6BggAEAcQHjoGCAAQBRAeUOUGWOUGYIILaABwAHgAgAF3iAHfAZIBAzAuMpgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=2v7iZLq4AuPBpgfQgbXQDQ&bih=634&biw=1350#imgrc=3V3Lak1MH55F5M\",\r\n        \"usertype\":\"2\"\r\n        }\r\n   \r\n\r\n   \r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.6:6005/users/adduser",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"6"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"adduser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adduser Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   \r\n     { \"username\": \"look\",\r\n        \"password\":\"look\",\r\n        \"gender\": \"male\",\r\n        \"email\": \"look@gmail.com\",\r\n        \"phonenumber\":\"3222222\",\r\n        \"url\":\"https://www.google.com/search?q=patient+image&tbm=isch&ved=2ahUKEwi6jerpiu2AAxXjoOkKHdBADdoQ2-cCegQIABAA&oq=patient+image&gs_lcp=CgNpbWcQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BAgjECc6BggAEAcQHjoGCAAQBRAeUOUGWOUGYIILaABwAHgAgAF3iAHfAZIBAzAuMpgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=2v7iZLq4AuPBpgfQgbXQDQ&bih=634&biw=1350#imgrc=3V3Lak1MH55F5M\",\r\n        \"usertype\":\"2\"\r\n        }\r\n   \r\n\r\n   \r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.6:6005/users/adduser",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"6"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"adduser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateuserimage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "file",
+					"file": {
+						"src": "/C:/images/img5.jpg"
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.4:6005/users/updateuserimage/107",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"4"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"updateuserimage",
+						"107"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adduserimage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/D:/userimage/tamil.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.0.4:6005/users/adduserimage/107",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"4"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"adduserimage",
+						"107"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addimagetogif",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   \r\n     { \"username\": \"look\",\r\n        \"password\":\"look\",\r\n        \"gender\": \"male\",\r\n        \"email\": \"look@gmail.com\",\r\n        \"phonenumber\":\"3222222\",\r\n        \"url\":\"https://www.google.com/search?q=patient+image&tbm=isch&ved=2ahUKEwi6jerpiu2AAxXjoOkKHdBADdoQ2-cCegQIABAA&oq=patient+image&gs_lcp=CgNpbWcQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BAgjECc6BggAEAcQHjoGCAAQBRAeUOUGWOUGYIILaABwAHgAgAF3iAHfAZIBAzAuMpgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=2v7iZLq4AuPBpgfQgbXQDQ&bih=634&biw=1350#imgrc=3V3Lak1MH55F5M\",\r\n        \"usertype\":\"2\"\r\n        }\r\n   \r\n\r\n   \r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.4:6005/users/addimagetogif",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"4"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"addimagetogif"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rating",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   \r\n     { \r\n         \"appId\": 13,\r\n        \"ratingStars\":3,\r\n        \"ratingReviewCmd\":\"Cmd22d2\"\r\n        \r\n        }\r\n   \r\n\r\n   \r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.4:6005/users/rating",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"4"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"rating"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "doctorreviewpending",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.5:6005/users/doctorreviewpending/13",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"doctorreviewpending",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addsimag test",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   \r\n     { \r\n         \"appId\": 13,\r\n        \"ratingStars\":3,\r\n        \"ratingReviewCmd\":\"Cmd22d2\"\r\n        \r\n        }\r\n   \r\n\r\n   \r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.6:6005/users/addsimag",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"6"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"addsimag"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "userimageadd",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/D:/muthu 22/images/f.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.0.6:6005/users/adduserimage",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"6"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"adduserimage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "doctorslot",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   \r\n     { \"drId\": 107,\r\n        \"date\":\"13-07-2023\",\r\n        \"slot\":\"17:00\"\r\n        }\r\n   \r\n\r\n   \r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.5:6005/users/doctorsmultilot",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"doctorsmultilot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "doctorslotmulti",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   \r\n     { \"drId\": 107,\r\n        \"date\":\"13-07-2023\",\r\n        \"slot\":\"17:00\"\r\n        }\r\n   \r\n\r\n   \r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.5:6005/users/doctorsmultilot",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"doctorsmultilot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GEtdoctorslot",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.101:6005/users/getdoctorslot?drId=114 AND drAppDate=2023-07-20\n",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"101"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"getdoctorslot"
+					],
+					"query": [
+						{
+							"key": "drId",
+							"value": "114 AND drAppDate=2023-07-20\n"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getappointment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im11dGh1IiwicGFzc3dvcmQiOiJtdXRodSIsImlhdCI6MTY5MDUyOTM0M30.YeM2IIp-92S2YVd1HHAZjorfQXaXohxIBNAbGn1_rL",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://192.168.0.4:6005/users/getappointment?appDrId=114&drAppDate=2023-07-21",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"4"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"getappointment"
+					],
+					"query": [
+						{
+							"key": "appDrId",
+							"value": "114"
+						},
+						{
+							"key": "drAppDate",
+							"value": "2023-07-21"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getdoctorlist",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im11dGh1IiwicGFzc3dvcmQiOiJtdXRodSIsImlhdCI6MTY5MDUyOTM0M30.YeM2IIp-92S2YVd1HHAZjorfQXaXohxIBNAbGn1_rL",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://192.168.0.3:6005/users/getdoctorlist",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"3"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"getdoctorlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getappointment Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"appDrId\":114,\r\n    \"drAppDate\":2023-07-20\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.4:6005/users/getappointment",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"4"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"getappointment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addappointment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   \r\n     { \r\n         \"patientComment\":\"patientCommenty\",\r\n         \"reason\":\"reasony\",\r\n         \"appPatientId\":133,\r\n        \"appDrId\":114,\r\n        \"appSlotId\":215\r\n        \r\n     }\r\n        \r\n         \r\n\r\n   \r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.112:6005/users/addappointment",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"112"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"addappointment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addappointmentEdit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.7:6005/users/AppointmentEdit/13",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"7"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"AppointmentEdit",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "doctorAppointmentUpdate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   \r\n     { \r\n         \"drPrescription\": \"updatdddddde\"\r\n             }\r\n         \r\n\r\n   \r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.4:6005/users/doctorAppointmentUpdate/12",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"4"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"doctorAppointmentUpdate",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "doctorAppointmentCancel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.4:6005/users/doctorAppointmentCancel/15",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"4"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"doctorAppointmentCancel",
+						"15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PatientAppointmentCancel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   \r\n     { \r\n         \"appStatusId\":3\r\n             }\r\n         \r\n\r\n   ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.4:6005/users/patientAppointmentCancel/14",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"4"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"patientAppointmentCancel",
+						"14"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adddoctor",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n\r\n\r\n        { \"usertype\":1,\r\n        \"categoryId\":3,\r\n            \"username\": \"drdesign\",\r\n            \"password\":\"drdesign\",\r\n            \"gender\": \"male\",\r\n            \"email\": \"drdesign@gmail.com\",\r\n            \"phonenumber\":\"928888\",\r\n            \"url\":\"url\",\r\n            \"docexpreience\":7.5,\r\n            \"doccertificatenum\":\"199\",\r\n            \"drDesignation\":\"MBBS\"\r\n            \r\n            \r\n            \r\n            }\r\n    \r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.6:6005/users/adduserwithlogin",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"6"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"adduserwithlogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "auth",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"accesstoken\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.globals.set(\"token\", jsonData.accesstoken);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    {\r\n    \"username\":\"muthu\",\r\n    \"password\":\"muthu\"\r\n    \r\n    }\r\n\r\n ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.18.7:6005/users/auth",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"18",
+						"7"
+					],
+					"port": "6005",
+					"path": [
+						"users",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,67 @@
+.welcome-container {
+    text-align: left;
+    margin-top: 30px;
+    font-family: Arial, sans-serif;
+    font-family: poppins;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    text-align: end;
+    justify-content: center;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+}
+
+.title {
+    font-size: 24px;
+    
+}
+
+.rules {
+    text-align: left;
+    margin: 20px auto;
+    
+}
+
+.selection {
+    margin: 20px auto;
+    text-align: left;
+    
+}
+.selection div {
+    display: flex;
+    justify-content: space-between;
+}
+.id{
+    justify-content: right;
+}
+
+.name-input {
+    padding: 10px;
+    width: 200px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.start-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.start-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
